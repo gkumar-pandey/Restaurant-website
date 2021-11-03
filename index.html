@@ -8,6 +8,7 @@
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="shortcut icon" href="./images/tabicon.ico" type="image/x-icon">
     <title>Restro</title>
 </head>
@@ -43,9 +44,9 @@
 
     <!-- home section start-->
     <section class="home" id="home">
-        <div class="home-slider">
-            <div class="wrapper">
-                <div class="slide">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper wrapper">
+                <div class="swiper-slide slide">
                     <div class="content">
                         <span>Our special dish</span>
                         <h3>spicy noodles</h3>
@@ -57,7 +58,7 @@
                         <img src="./images/home-img-1.png" alt="">
                     </div>
                 </div>
-                <div class="slide">
+                <div class="swiper-slide slide">
                     <div class="content">
                         <span>Our special dish</span>
                         <h3>fried chicken</h3>
@@ -69,20 +70,45 @@
                         <img src="./images/home-img-2.png" alt="">
                     </div>
                 </div>
-                <div class="slide">
+                <div class="swiper-slide slide">
                     <div class="content">
                         <span>Our special dish</span>
-                       <h3>Hot pizza</h3>
-                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum optio maxime cum tempora cupidita.</p>
-                       <a href="#" class="btn">order now</a>
+                        <h3>Hot pizza</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum optio maxime cum tempora
+                            cupidita.</p>
+                        <a href="#" class="btn">order now</a>
                     </div>
                     <div class="image">
                         <img src="./images/home-img-3.png" alt="">
                     </div>
                 </div>
             </div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
+
+<!-- dishes section start here -->
+<section class="dishes" id="dishes">
+    <h3 class="sub-heading">our Dishes</h3>
+    <h1 class="heading">Popular Dishes</h1>
+    <div class="box-container">
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="./images/dish-1.png" alt="">
+            <h3>tasty food</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- dishes section end here -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <!-- java script -->
     <script src="script.js"></script>
 </body>
