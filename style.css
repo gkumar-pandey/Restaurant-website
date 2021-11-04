@@ -445,7 +445,7 @@ header .icons #menu-bars {
 
 /* order section */
 .order form{
-    width: 90rem;
+    max-width: 90rem;
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
     border: .1rem solid rgba(0, 0, 0, .2);
@@ -478,6 +478,20 @@ header .icons #menu-bars {
     margin-bottom: 1rem;
     width: 100%;
 }
+.order form .inputbox .input textarea{
+    height: 20rem;
+    resize: none;
+}
+.order form .inputbox .input input:focus,
+.order form .inputbox .input textarea:focus{
+    border: .1rem solid var(--green);
+}
+/* footer */
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    gap: 1.5rem;
+}
 /* media queries */
 @media (max-width:991px)
 {
@@ -495,6 +509,10 @@ header .icons #menu-bars {
     section{
         padding: 2rem;
     }
+    .order form .inputbox .input{
+        width: 100%;
+    }
+
 }
 
 @media (max-width:768px)
