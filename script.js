@@ -32,3 +32,14 @@ var swiper = new Swiper(".home-slider", {
     },
     loop:true,
   });
+
+  var swiper = new Swiper(".review-slider", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 6000,
+      disableOnInteraction: false,
+    },
+    
+    loop:true,
+  });
