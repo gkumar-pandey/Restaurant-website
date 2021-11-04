@@ -372,6 +372,35 @@ header .icons #menu-bars {
     background:var(--green);
     color: #fff;
 }
+
+.menu .box-container .box .content{
+    padding: 2rem;
+    padding-top: 0;
+}
+.menu .box-container .box .content .stars{
+    padding-bottom: 1rem;
+
+}
+.menu .box-container .box .content .stars i{
+    font-size: 1.7rem;
+    color: var(--green);
+}
+.menu .box-container .box .content h3{
+    color: var(--black);
+    font-size: 2.5rem;
+}
+.menu .box-container .box .content p{
+    color: var(--light-color);
+    font-size: 1.7rem;
+    padding: .5rem 0;
+    line-height: 1.5;
+}
+.menu .box-container .box .content .pice{
+    color: var(--green);
+    margin-left: 1rem;
+    font-size: 1.8rem;
+ 
+}
 /* media queries */
 @media (max-width:991px)
 {
